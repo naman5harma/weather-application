@@ -16,19 +16,19 @@
         <p>Invalid City Name</p>
       </div>
       <div class="weather">
-        <img src="images/mist.png" class="weather-icon" alt="" />
+        <img src="mist.png" class="weather-icon" alt="" />
         <h1 class="temp">22⁰c</h1>
         <h2 class="city">New Delhi</h2>
         <div class="details">
           <div class="col">
-            <img src="images/humidity.png" alt="" />
+            <img src="humidity.png" alt="" />
             <div>
               <p class="humidity">50%</p>
               <p>Humidity</p>
             </div>
           </div>
           <div class="col">
-            <img src="images/wind.png" alt="" />
+            <img src="wind.png" alt="" />
             <div>
               <p class="wind">35Kmph</p>
               <p>Wind Speed</p>
@@ -70,18 +70,18 @@
           document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
           if (data.weather[0].main == "Clouds") {
-            weatherIcon.src = "images/clouds.png";
+            weatherIcon.src = "clouds.png";
           } else if (data.weather[0].main == "Rain") {
-            weatherIcon.src = "images/rain.png";
+            weatherIcon.src = "rain.png";
           } else if (data.weather[0].main == "Clear") {
-            weatherIcon.src = "images/clear.png";
+            weatherIcon.src = "clear.png";
           } else if (data.weather[0].main == "Mist") {
-            weatherIcon.src = "images/mist.png";
+            weatherIcon.src = "mist.png";
           } else if (data.weather[0].main == "Drizzle") {
-            weatherIcon.src = "images/drizzle.png";
+            weatherIcon.src = "drizzle.png";
           }
           // } else {
-          //   weatherIcon.src = "images/snow.png";
+          //   weatherIcon.src = "snow.png";
           // }
           document.querySelector(".error").style.display = "none";
           document.querySelector(".weather").style.display = "block";
